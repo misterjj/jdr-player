@@ -3,32 +3,27 @@ import Image from "next/image";
 import {Play} from "lucide-react";
 import {Button} from "@workspace/ui/components/button";
 
-export interface ISoundListProps {
+export interface ISoundGridProps {
     sounds: IJdrSound[]
 }
 
-export default function SoundList({ sounds }: ISoundListProps) {
+export default function SoundGrid({ sounds }: ISoundGridProps) {
     return (
-        <div className="flex flex-col gap-2 pb-4">
+        <div className="flex gap-5 flex-wrap justify-around">
             {sounds.map((sound, i) => {
-                return <div key={i} className="flex gap-2 bg-zinc-800 p-2 rounded">
+                return <div key={i} className="flex flex-col justify-center items-center gap-2">
                     <div>
                         <Image
                             src={sound.image}
                             alt={sound.name}
-                            width={65}
-                            height={65}
-                            className="aspect-square rounded object-contain"
+                            width={100}
+                            height={100}
+                            className="aspect-square rounded-full object-contain"
                         />
                     </div>
                     <div className="grow flex flex-col justify-center">
                         <div className="font-semibold">{sound.name}</div>
                         <div className="font-light text-sm text-gray-300">{sound.description}</div>
-                    </div>
-                    <div className="flex flex-col justify-center">
-                        <Button size="icon">
-                            <Play />
-                        </Button>
                     </div>
                 </div>
             })}
