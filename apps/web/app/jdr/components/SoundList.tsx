@@ -21,7 +21,7 @@ export default function SoundList({sounds, addToTracks}: ISoundListProps) {
                             alt={sound.name}
                             width={65}
                             height={65}
-                            className="aspect-square rounded object-contain"
+                            className="aspect-square rounded object-cover"
                         />
                     </div>
                     <div className="grow flex flex-col justify-center">

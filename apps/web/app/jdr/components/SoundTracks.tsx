@@ -101,7 +101,7 @@ export function SoundTrack({track, removeFromTracks}: ISoundTrack) {
                     onStart={() => setIsSeeking(false)}
                     onDurationChange={handleDurationChange}
                     onTimeUpdate={handleTimeUpdate}
-                    onEnded={() => setIsPlaying(false)}
+                    onEnded={() => removeFromTracks(track)}
                     muted={isMuted}
                     config={{}}
                 />

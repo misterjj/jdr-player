@@ -33,7 +33,7 @@ export interface IJdrPageProps {
 export function JdrPage({jdrPage}: IJdrPageProps) {
     const [tracks, setTracks] = useState<IPlayedSound[]>([])
 
-    const addToTracks = (track: IPlayedSound) => {
+    const addToTracks = (track: IJdrSound) => {
         const newTrack: IPlayedSound = {
             ...track,
             instanceId: Math.random().toString(36).substring(2, 15) + Date.now().toString(36)
@@ -58,26 +58,26 @@ export function JdrPage({jdrPage}: IJdrPageProps) {
                         })}
                     </TabsList>
                 </div>
-                {jdrPage.tabs.map(tab => {
-                    return <TabsContent value={tab.name} key={tab.name} className="flex flex-col grow min-h-0">
-                        <div className="w-full grow flex min-h-0">
-                            <div className="w-2/3 flex min-h-0">
-                                <Pannel element={<SoundList sounds={tab.ambiances} addToTracks={addToTracks}/>}
-                                        name="Ambiances"
-                                        width="w-1/2"
-                                />
-                                <Pannel element={<SoundList sounds={tab.narrator} addToTracks={addToTracks}/>}
-                                        name="Narrateur"
-                                        width="w-1/2"/>
-                            </div>
-                            <div className="w-1/3 flex min-h-0">
-                                <Pannel width={"w-full"}
-                                        element={<SoundTracks tracks={tracks} removeFromTracks={removeFromTrack}/>}
-                                        name="Pistes"/>
-                            </div>
-                        </div>
-                    </TabsContent>
-                })}
+                <div className="w-full grow flex min-h-0">
+                    <div className="w-2/3 flex min-h-0">
+                        {jdrPage.tabs.map(tab => {
+                            return <TabsContent value={tab.name} key={tab.name} className="flex grow min-h-0">
+                                    <Pannel element={<SoundList sounds={tab.ambiances} addToTracks={addToTracks}/>}
+                                            name="Ambiances"
+                                            width="w-1/2"
+                                    />
+                                    <Pannel element={<SoundList sounds={tab.narrator} addToTracks={addToTracks}/>}
+                                            name="Narrateur"
+                                            width="w-1/2"/>
+                                </TabsContent>
+                        })}
+                    </div>
+                    <div className="w-1/3 flex min-h-0">
+                        <Pannel width={"w-full"}
+                                element={<SoundTracks tracks={tracks} removeFromTracks={removeFromTrack}/>}
+                                name="Pistes"/>
+                    </div>
+                </div>
             </Tabs>
         </div>
     )
@@ -91,7 +91,7 @@ interface IPannel {
 
 function Pannel({name, element, width}: IPannel) {
     return (
-        <div className={`${width} flex flex-col pe-1`}>
+        <div className={`${width} flex flex-col pe-1 min-h-0`}>
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight text-center p-4">{name}</h3>
             <div className="grow overflow-y-auto pe-2">
                 {element}
