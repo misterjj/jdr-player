@@ -1,3 +1,5 @@
+"use client";
+
 import {IJdrSound} from "@/app/jdr/components/jdrPage";
 import Image from "next/image";
 import {Play} from "lucide-react";

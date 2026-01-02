@@ -1,4 +1,6 @@
-import JdrPage, {IJdrPage} from "@/app/jdr/components/jdrPage";
+"use client";
+
+import {IJdrPage, JdrPage} from "@/app/jdr/components/jdrPage";
 
 const assetsPath = "/assets/okimba_caravane";
 

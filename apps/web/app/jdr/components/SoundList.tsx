@@ -1,13 +1,16 @@
+"use client";
+
 import {IJdrSound} from "@/app/jdr/components/jdrPage";
 import Image from "next/image";
-import {Play} from "lucide-react";
+import {Plus} from "lucide-react";
 import {Button} from "@workspace/ui/components/button";
 
 export interface ISoundListProps {
-    sounds: IJdrSound[]
+    sounds: IJdrSound[],
+    addToTracks: (sound: IJdrSound) => void;
 }
 
-export default function SoundList({ sounds }: ISoundListProps) {
+export default function SoundList({sounds, addToTracks}: ISoundListProps) {
     return (
         <div className="flex flex-col gap-2 pb-4">
             {sounds.map((sound, i) => {
@@ -26,8 +29,8 @@ export default function SoundList({ sounds }: ISoundListProps) {
                         <div className="font-light text-sm text-gray-300">{sound.description}</div>
                     </div>
                     <div className="flex flex-col justify-center">
-                        <Button size="icon">
-                            <Play />
+                        <Button size="icon" onClick={() => addToTracks(sound)}>
+                            <Plus/>
                         </Button>
                     </div>
                 </div>
