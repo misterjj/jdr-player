@@ -16,7 +16,7 @@ export interface ISoundTracks {
 
 export default function SoundTracks({tracks, removeFromTracks}: ISoundTracks) {
     return (
-        <div className="flex flex-col min-h-full bg-zinc-800 p-2">
+        <div className="flex flex-col min-h-full bg-zinc-800/90 p-2">
             {tracks.map((track) => {
                 return <SoundTrack track={track} key={track.instanceId} removeFromTracks={removeFromTracks}/>
             })}
@@ -91,7 +91,7 @@ export function SoundTrack({track, removeFromTracks}: ISoundTrack) {
     };
 
     return (
-        <div className="w-full bg-zinc-900 h-20 text-center select-none">
+        <div className="w-full bg-zinc-900/90 h-20 text-center select-none">
             <div className="hidden">
                 <ReactPlayer
                     ref={playerRef}
@@ -104,6 +104,7 @@ export function SoundTrack({track, removeFromTracks}: ISoundTrack) {
                     onEnded={() => removeFromTracks(track)}
                     muted={isMuted}
                     config={{}}
+                    controls={false}
                 />
             </div>
             <div className="flex flex-col h-full">
@@ -129,7 +130,7 @@ export function SoundTrack({track, removeFromTracks}: ISoundTrack) {
                                     alt={track.description || ""}
                                     width={60}
                                     height={60}
-                                    className="aspect-square rounded object-contain"
+                                    className="aspect-square rounded object-cover"
                                 />
                             </div>
                             <div className="flex-initial flex flex-col items-start">

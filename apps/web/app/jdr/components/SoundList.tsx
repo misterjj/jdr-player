@@ -14,7 +14,7 @@ export default function SoundList({sounds, addToTracks}: ISoundListProps) {
     return (
         <div className="flex flex-col gap-2 pb-4">
             {sounds.map((sound, i) => {
-                return <div key={i} className="flex gap-2 bg-zinc-800 p-2 rounded">
+                return <div key={i} className="flex gap-2 bg-zinc-800/90 p-2 rounded">
                     <div>
                         <Image
                             src={sound.image}
