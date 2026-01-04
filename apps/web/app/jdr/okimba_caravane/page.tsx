@@ -38,12 +38,6 @@ const page: IJdrPage = {
                     description: "Desert avec du vent",
                     image: "https://i.ytimg.com/vi/4E-_Xpj0Mgo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
                     file: "https://www.youtube.com/watch?v=4E-_Xpj0Mgo",
-                },
-                {
-                    name: "Mon super titre 3",
-                    description: "Ma super description",
-                    image: assetsPath + "/img/placeholder.png",
-                    file: assetsPath + "/sound/sample3.aac",
                 }
             ],
             narrator: [
