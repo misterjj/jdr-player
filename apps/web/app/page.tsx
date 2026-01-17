@@ -9,6 +9,12 @@ const models = [
         description: "Carvane",
         image: "/assets/okimba_caravane/cover.png",
         link: "/jdr/okimba_caravane",
+    },
+    {
+        name: "Donjons & Chatons",
+        description: "Boite de découverte",
+        image: "/assets/donjons_chatons_decouverte/cover.png",
+        link: "/jdr/donjons_chatons_decouverte",
     }
 ]
 
