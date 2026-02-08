@@ -134,7 +134,7 @@ export function SoundTrack({track, removeFromTracks}: ISoundTrack) {
                                 />
                             </div>
                             <div className="flex-initial flex flex-col items-start">
-                                <div className="font-semibold text-sm text-primary">{track.name}</div>
+                                <div className="font-bold text-sm text-primary">{track.name}</div>
                                 <div className="text-sm text-gray-300">
                                     {formatTime(playedSeconds)} / {formatTime(duration)}
                                 </div>
