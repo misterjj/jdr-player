@@ -91,11 +91,48 @@ const page: IJdrPage = {
             name: "Acte II",
             ambiances: [
                 {
+                    name: "Désert - Nuit",
+                    description: "En arrivant à Kahon'dé",
+                    image: "https://i.ytimg.com/vi/lu_N7D5NMEM/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5JhVvWD05G1FwkkhHvgk_O_p3Vg",
+                    file: "https://www.youtube.com/watch?v=lu_N7D5NMEM",
+                },
+                {
                     name: "Kahon'dé - Souk",
-                    description: "Le souk de Kahon'dé",
+                    description: "Quartier des Gakous",
                     image: "https://i.ytimg.com/vi/8uRtW8lBe0I/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5JhVvWD05G1FwkkhHvgk_O_p3Vg",
                     file: "https://www.youtube.com/watch?v=8uRtW8lBe0I",
-                },],
+                },
+                {
+                    name: "Kahon'dé - Oasis",
+                    description: "Quartier des Ingambs",
+                    image: "https://i.ytimg.com/vi/JjAEdyv9KgE/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5JhVvWD05G1FwkkhHvgk_O_p3Vg",
+                    file: "https://www.youtube.com/watch?v=JjAEdyv9KgE",
+                },
+                {
+                    name: "Kahon'dé - Artisants",
+                    description: "Quartier des Tiguèts",
+                    image: "https://i.ytimg.com/vi/JN8nj2-7G34/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5JhVvWD05G1FwkkhHvgk_O_p3Vg",
+                    file: "https://www.youtube.com/watch?v=JN8nj2-7G34",
+                },
+                {
+                    name: "Kahon'dé - Brulés",
+                    description: "Quartier des Zékaÿ",
+                    image: "https://i.ytimg.com/vi/fbGM354M3ms/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5JhVvWD05G1FwkkhHvgk_O_p3Vg",
+                    file: "https://www.youtube.com/watch?v=fbGM354M3ms",
+                },
+                {
+                    name: "Kahon'dé - Palais",
+                    description: "Quartier des Krinèrs",
+                    image: "https://i.ytimg.com/vi/MCaekghzVtE/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5JhVvWD05G1FwkkhHvgk_O_p3Vg",
+                    file: "https://www.youtube.com/watch?v=MCaekghzVtE",
+                },
+                {
+                    name: "Kahon'dé - Cave",
+                    description: "Sous sol et puit",
+                    image: "https://i.ytimg.com/vi/3Hwr_BaekgM/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC5JhVvWD05G1FwkkhHvgk_O_p3Vg",
+                    file: "https://www.youtube.com/watch?v=3Hwr_BaekgM",
+                },
+            ],
             narrator: [
                 {
                     name: "Une marche éreintante",
@@ -116,7 +153,7 @@ const page: IJdrPage = {
                     file: assetsPath + "/sound/act-II/3.wav",
                 },
                 {
-                    name: "Le Souk",
+                    name: "On trouve de tout au souk!",
                     description: "Le quartier Gankou",
                     image: "https://placehold.co/100x100?text=4",
                     file: assetsPath + "/sound/act-II/4.wav",
@@ -154,7 +191,7 @@ const page: IJdrPage = {
                 {
                     name: "Le maître de combat",
                     description: "Le jardin intérieur du palais des Krinièr",
-                    image: "https://placehold.co/100x100?text=10",
+                    image: "https://placehold.co/100x100?text=11",
                     file: assetsPath + "/sound/act-II/11.wav",
                 },
                 {
@@ -217,7 +254,38 @@ const page: IJdrPage = {
         {
             name: "Acte III",
             ambiances: [],
-            narrator: [],
+            narrator: [
+                {
+                    name: "La recherche du tunnel",
+                    description: "Après la bulle VII",
+                    image: "https://placehold.co/100x100?text=1",
+                    file: assetsPath + "/sound/act-III/1.wav",
+                },
+                {
+                    name: "L'approche du rocher",
+                    description: "Ils ont résulu l'égnime des pierres",
+                    image: "https://placehold.co/100x100?text=2",
+                    file: assetsPath + "/sound/act-III/2.wav",
+                },
+                {
+                    name: " L'ouverture de la porte",
+                    description: "Ils ont résulu l'égnime de la porte",
+                    image: "https://placehold.co/100x100?text=3",
+                    file: assetsPath + "/sound/act-III/3.wav",
+                },
+                {
+                    name: " L'entrée dans les profondeurs",
+                    description: "Ils sont entré dans le tunnels",
+                    image: "https://placehold.co/100x100?text=4",
+                    file: assetsPath + "/sound/act-III/4.wav",
+                },
+                {
+                    name: " Le Village Pikpikk",
+                    description: "",
+                    image: "https://placehold.co/100x100?text=5",
+                    file: assetsPath + "/sound/act-III/5.wav",
+                },
+            ],
             effects: []
         },
         {
