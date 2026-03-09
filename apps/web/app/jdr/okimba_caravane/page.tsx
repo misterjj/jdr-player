@@ -253,7 +253,14 @@ const page: IJdrPage = {
         },
         {
             name: "Acte III",
-            ambiances: [],
+            ambiances: [
+                {
+                    name: "Desert - Venteux",
+                    description: "Desert avec du vent",
+                    image: "https://i.ytimg.com/vi/4E-_Xpj0Mgo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=4E-_Xpj0Mgo",
+                }
+            ],
             narrator: [
                 {
                     name: "La recherche du tunnel",
@@ -291,6 +298,31 @@ const page: IJdrPage = {
         {
             name: "Acte IV",
             ambiances: [],
+            narrator: [],
+            effects: []
+        },
+        {
+            name: "Bulle VII",
+            ambiances: [
+                {
+                    name: "Desert - Venteux",
+                    description: "Desert avec du vent",
+                    image: "https://i.ytimg.com/vi/4E-_Xpj0Mgo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=4E-_Xpj0Mgo",
+                },
+                {
+                    name: "Tente",
+                    description: "Repas d'affaire",
+                    image: "https://i.ytimg.com/vi/maYRisfQQvc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=maYRisfQQvc",
+                },
+                {
+                    name: "Mine",
+                    description: "Intérrieur - vent dehors",
+                    image: "https://i.ytimg.com/vi/lf7yb33oRbM/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=lf7yb33oRbM",
+                }
+            ],
             narrator: [],
             effects: []
         }
