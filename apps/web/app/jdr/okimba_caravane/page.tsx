@@ -394,7 +394,32 @@ const page: IJdrPage = {
         {
             name: "Acte IV",
             ambiances: [],
-            narrator: [],
+            narrator: [
+                {
+                    name: "Le village Rgouate",
+                    description: "Tombé de la nuit",
+                    image: "https://placehold.co/100x100?text=01",
+                    file: assetsPath + "/sound/act-IV/1.wav",
+                },
+                {
+                    name: "Histoire de la guerre",
+                    description: "Devant le squellette géant",
+                    image: "https://placehold.co/100x100?text=02",
+                    file: assetsPath + "/sound/act-IV/2.wav",
+                },
+                {
+                    name: "Dans le dardune",
+                    description: "Tombé de la nuit",
+                    image: "https://placehold.co/100x100?text=03",
+                    file: assetsPath + "/sound/act-IV/3.wav",
+                },
+                {
+                    name: "Rituel",
+                    description: "Avec me dansedune",
+                    image: "https://placehold.co/100x100?text=04",
+                    file: assetsPath + "/sound/act-IV/4.wav",
+                },
+            ],
             effects: []
         },
         {
