@@ -259,7 +259,31 @@ const page: IJdrPage = {
                     description: "Desert avec du vent",
                     image: "https://i.ytimg.com/vi/4E-_Xpj0Mgo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
                     file: "https://www.youtube.com/watch?v=4E-_Xpj0Mgo",
-                }
+                },
+                {
+                    name: "Cave",
+                    description: "Village",
+                    image: "https://i.ytimg.com/vi/nfjrgINw0l4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=nfjrgINw0l4",
+                },
+                {
+                    name: "Cave",
+                    description: "humide",
+                    image: "https://i.ytimg.com/vi/1nS7vjVUjBg/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=1nS7vjVUjBg",
+                },
+                {
+                    name: "Cave",
+                    description: "Bruit",
+                    image: "https://i.ytimg.com/vi/-8U4tTlG5n4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=-8U4tTlG5n4",
+                },
+                {
+                    name: "Temple",
+                    description: "",
+                    image: "https://i.ytimg.com/vi/5BRD6wBRW0Y/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBnsGmXk7SZrfDGoj7ltsgtQyDckA",
+                    file: "https://www.youtube.com/watch?v=5BRD6wBRW0Y",
+                },
             ],
             narrator: [
                 {
@@ -321,6 +345,48 @@ const page: IJdrPage = {
                     description: "",
                     image: "https://placehold.co/100x100?text=10",
                     file: assetsPath + "/sound/act-III/10.wav",
+                },
+                {
+                    name: "L'entrée du Tombeau d'Akobi",
+                    description: "",
+                    image: "https://placehold.co/100x100?text=11",
+                    file: assetsPath + "/sound/act-III/11.wav",
+                },
+                {
+                    name: "Le Tombeau",
+                    description: "Salle finale",
+                    image: "https://placehold.co/100x100?text=12",
+                    file: assetsPath + "/sound/act-III/12.wav",
+                },
+                {
+                    name: "La Plateforme et la Momie",
+                    description: "",
+                    image: "https://placehold.co/100x100?text=13",
+                    file: assetsPath + "/sound/act-III/13.wav",
+                },
+                {
+                    name: "Le réveil d'Akobi",
+                    description: "Phase I",
+                    image: "https://placehold.co/100x100?text=14",
+                    file: assetsPath + "/sound/act-III/14.wav",
+                },
+                {
+                    name: "Somnolence",
+                    description: "Phase II",
+                    image: "https://placehold.co/100x100?text=15",
+                    file: assetsPath + "/sound/act-III/15.wav",
+                },
+                {
+                    name: "Le réveil final d'Akobi",
+                    description: "",
+                    image: "https://placehold.co/100x100?text=16",
+                    file: assetsPath + "/sound/act-III/16.wav",
+                },
+                {
+                    name: "Le Pupitre final",
+                    description: "",
+                    image: "https://placehold.co/100x100?text=17",
+                    file: assetsPath + "/sound/act-III/17.wav",
                 },
             ],
             effects: []
